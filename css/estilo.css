@@ -1,0 +1,134 @@
+*{
+    padding:0;
+    margin:0;
+}
+section{
+    height:100vh;   
+}
+/* MENU */
+
+.logo{
+    width:100px;
+}
+
+#menu{
+    text-align: center;
+}
+.nav-link{
+    font-weight: bolder;
+}
+.nav-link{
+    color:rgb(44, 44, 44);
+}
+
+.navbar-nav .nav-link.active{
+    color:rgb(48, 199, 63);
+}
+
+/* AREA PERFIL */
+.foto_perfil{
+    border-radius: 300px;
+    width:300px;
+    height:300px;
+    overflow: hidden;
+}
+
+.nombre_perfil{
+    text-align: center;
+}
+
+.foto_perfil img{
+    position:relative;
+    left:-25%;
+    width:150%;
+}
+.area_perfil{
+
+    text-align: center;
+    color:#fff;
+    background: url(../img/pexels-free-nature-stock-1564278.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#typed{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+/* SECCIÓN SOBRE MI */
+/* Caja íconos de redes */
+#sobremi{
+    padding: 25px;
+    
+}
+
+.caja_Redes{
+    width:40%;
+    line-height: 5;
+}
+.caja_sobremi{
+    width:60%;
+}
+.caja_foto img{
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0%, 100% 74%, 50% 100%, 0 74%);
+}
+
+.caja_iconos{
+    margin: auto;
+    width:50%;
+    
+}
+
+/* SOBRE MI */
+.caja_sobremi{
+    padding: 20px;
+}
+.bi{
+    color:rgb(48, 199, 63);
+    font-size: 18px;
+}
+
+.caja_iconos_cv{
+    margin:auto;
+    line-height: 4rem;
+}
+
+.iconoTexto{
+    color:#000;
+}
+
+a.boton{
+    text-decoration: none;
+    color:#fff;
+    background-color:rgb(48, 199, 63);
+    width:25%;
+    text-align: center;
+    font-weight: bolder;
+    padding: 5px;
+  
+}
+
+/* MEDIA QUERIES*/
+
+@media(max-width:576px){
+    .foto_perfil{
+        border-radius: 200px;
+        width:200px;
+        height:200px;
+    }
+    #typed{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .caja_Redes, .caja_sobremi{
+        width:100%;
+    }
+
+    a.boton{
+        width:100%;
+    }
+}
+
+
