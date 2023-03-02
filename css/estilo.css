@@ -2,9 +2,13 @@
     padding:0;
     margin:0;
 }
+
+/*
 section{
-    height:100vh;   
+
 }
+*/
+
 /* MENU */
 
 .logo{
@@ -65,9 +69,11 @@ section{
 .caja_Redes{
     width:40%;
     line-height: 5;
+    margin:auto;
 }
 .caja_sobremi{
     width:60%;
+    margin:auto;
 }
 .caja_foto img{
     width: 100%;
@@ -109,6 +115,50 @@ a.boton{
   
 }
 
+/* Secciones del CV*/
+/* EDUCACIÓN */
+.area_educacion{
+    background: rgb(214,234,248);
+    background: linear-gradient(0deg, rgba(214,234,248,1) 0%, rgba(248,249,250,1) 100%);  
+    padding:10px;
+}
+.area_educacion h2{
+    margin-bottom:25px;
+}
+
+article h2{
+    text-align: center;
+}
+
+.area_formacion .titulos{
+    width: 40%;
+    margin-bottom: 15px;
+
+}
+.titulos h3{
+    font-size: 17px;
+}
+
+.titulos span{
+    font-size: 14px;
+}
+.titulos .txt_formacion{
+    text-align: justify;
+}
+.titulos .separador{
+    width:35px;
+    height:5px;
+    background-color:rgb(48, 199, 63);
+    border-radius: 100px;
+    margin:10px 0;
+}
+
+/* CONOCIMIENTOS */
+.area_habilidades{
+    background: rgb(214,234,248);
+    background: linear-gradient(180deg, rgba(214,234,248,1) 0%, rgba(174,214,241,1) 100%);
+}
+
 /* MEDIA QUERIES*/
 
 @media(max-width:576px){
@@ -128,6 +178,18 @@ a.boton{
 
     a.boton{
         width:100%;
+    }
+    .area_formacion{
+        width: 100%;
+       
+    }
+
+}
+
+@media(max-width:900px){
+    .area_formacion .titulos{
+        width: 100%;
+        margin-bottom: 15px;
     }
 }
 
