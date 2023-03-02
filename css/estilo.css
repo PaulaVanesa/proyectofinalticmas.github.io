@@ -216,6 +216,10 @@ section{
         width: 90%;
         margin-bottom: 25px;
     }
+    .area_galeria .caja_fotos{
+        width: 90%;
+       margin:auto;
+    }
 }
 
 
