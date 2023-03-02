@@ -62,109 +62,127 @@ section{
 }
 
 /* SECCIÓN SOBRE MI */
-/* Caja íconos de redes */
-#sobremi{
-    padding: 25px;
+    /* Caja íconos de redes */
+    #sobremi{
+        padding: 25px;
+        
+    }
+
+    .caja_Redes{
+        width:40%;
+        line-height: 5;
+        margin:auto;
+    }
+    .caja_sobremi{
+        width:60%;
+        margin:auto;
+    }
+    .caja_foto img{
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0%, 100% 74%, 50% 100%, 0 74%);
+    }
+
+    .caja_iconos{
+        margin: auto;
+        width:50%;
+        
+    }
+
+    /* SOBRE MI */
+    .caja_sobremi{
+        padding: 20px;
+    }
+    .bi{
+        color:rgb(48, 199, 63);
+        font-size: 18px;
+    }
+
+    .caja_iconos_cv{
+        margin:auto;
+        line-height: 4rem;
+    }
+
+    .iconoTexto{
+        color:#000;
+    }
+
+    a.boton{
+        text-decoration: none;
+        color:#fff;
+        background-color:rgb(48, 199, 63);
+        width:25%;
+        text-align: center;
+        font-weight: bolder;
+        padding: 5px;
     
+    }
+
+    /* Secciones del CV*/
+    /* EDUCACIÓN */
+    .area_educacion{
+        background: #EBF5FB ;
+        padding:10px;
+    }
+    .area_educacion h2, .area_habilidades h2, .area_experiencia h2{
+        padding:25px 0px;
+    }
+
+    article h2, .area_portafolio h2, #contacto h2{
+        text-align: center;
+    }
+
+    .area_formacion .titulos, .area_conocimiento .conocimientos, .area_experiencias .titulos{
+        width: 40%;
+        margin-bottom: 15px;
+
+    }
+    .titulos h3{
+        font-size: 17px;
+    }
+
+    .titulos span{
+        font-size: 14px;
+    }
+    .titulos .txt_formacion, .info_conocimiento .txt_conocimiento, .titulos .txt_experiencia{
+        text-align: justify;
+    }
+    .titulos .separador{
+        width:35px;
+        height:5px;
+        background-color:rgb(48, 199, 63);
+        border-radius: 100px;
+        margin:10px 0;
+    }
+
+    /* CONOCIMIENTOS */
+    .area_habilidades{
+        background-color: #d6eaf8;
+    }
+    .info_conocimiento h3{
+        font-size:22px;
+    }
+
+    .icono_conocimiento .bi{
+        margin-right: 15px;
+        font-size: 35px;
+    }
+
+    /* EXPERIENCIA */
+    .area_experiencia{
+        background-color: #aed6f1;
+    }
+
+/* GALERIA */
+.area_portafolio{
+    background-color: #85C1E9;
 }
 
-.caja_Redes{
-    width:40%;
-    line-height: 5;
-    margin:auto;
+.area_galeria .caja_fotos{
+    width:calc(33% - 10px);
+    margin-bottom: 10px;
 }
-.caja_sobremi{
-    width:60%;
-    margin:auto;
-}
-.caja_foto img{
-    width: 100%;
-    clip-path: polygon(0 0, 100% 0%, 100% 74%, 50% 100%, 0 74%);
-}
-
-.caja_iconos{
-    margin: auto;
-    width:50%;
-    
-}
-
-/* SOBRE MI */
-.caja_sobremi{
-    padding: 20px;
-}
-.bi{
-    color:rgb(48, 199, 63);
-    font-size: 18px;
-}
-
-.caja_iconos_cv{
-    margin:auto;
-    line-height: 4rem;
-}
-
-.iconoTexto{
-    color:#000;
-}
-
-a.boton{
-    text-decoration: none;
-    color:#fff;
-    background-color:rgb(48, 199, 63);
-    width:25%;
-    text-align: center;
-    font-weight: bolder;
-    padding: 5px;
-  
-}
-
-/* Secciones del CV*/
-/* EDUCACIÓN */
-.area_educacion{
-    background: #EBF5FB ;
-    padding:10px;
-}
-.area_educacion h2, .area_habilidades h2{
-    padding:25px 0px;
-}
-
-article h2{
-    text-align: center;
-}
-
-.area_formacion .titulos, .area_conocimiento .conocimientos{
-    width: 40%;
-    margin-bottom: 15px;
-
-}
-.titulos h3{
-    font-size: 17px;
-}
-
-.titulos span{
-    font-size: 14px;
-}
-.titulos .txt_formacion, .info_conocimiento .txt_conocimiento{
-    text-align: justify;
-}
-.titulos .separador{
-    width:35px;
-    height:5px;
-    background-color:rgb(48, 199, 63);
-    border-radius: 100px;
-    margin:10px 0;
-}
-
-/* CONOCIMIENTOS */
-.area_habilidades{
-    background: #d6eaf8;
-}
-.info_conocimiento h3{
-    font-size:22px;
-}
-
-.icono_conocimiento .bi{
-    margin-right: 15px;
-    font-size: 35px;
+.caja_fotos img{
+    width:100%;
 }
 
 /* MEDIA QUERIES*/
@@ -187,9 +205,8 @@ article h2{
     a.boton{
         width:100%;
     }
-    .area_formacion{
-        width: 100%;
-       
+    .area_formacion, .area_experiencias .titulos{
+        width: 100%;  
     }
 
 }
