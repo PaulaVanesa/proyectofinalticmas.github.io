@@ -3,10 +3,14 @@
     margin:0;
 }
 
+/*
+section{
+
+}
+*/
 .area_perfil{
     height:100vh;
 }
-
 /* MENU */
 
 .logo{
@@ -116,19 +120,18 @@ a.boton{
 /* Secciones del CV*/
 /* EDUCACIÓN */
 .area_educacion{
-    background: rgb(214,234,248);
-    background: linear-gradient(0deg, rgba(214,234,248,1) 0%, rgba(248,249,250,1) 100%);  
+    background: #EBF5FB ;
     padding:10px;
 }
-.area_educacion h2{
-    margin-bottom:25px;
+.area_educacion h2, .area_habilidades h2{
+    padding:25px 0px;
 }
 
 article h2{
     text-align: center;
 }
 
-.area_formacion .titulos{
+.area_formacion .titulos, .area_conocimiento .conocimientos{
     width: 40%;
     margin-bottom: 15px;
 
@@ -140,7 +143,7 @@ article h2{
 .titulos span{
     font-size: 14px;
 }
-.titulos .txt_formacion{
+.titulos .txt_formacion, .info_conocimiento .txt_conocimiento{
     text-align: justify;
 }
 .titulos .separador{
@@ -153,8 +156,15 @@ article h2{
 
 /* CONOCIMIENTOS */
 .area_habilidades{
-    background: rgb(214,234,248);
-    background: linear-gradient(180deg, rgba(214,234,248,1) 0%, rgba(174,214,241,1) 100%);
+    background: #d6eaf8;
+}
+.info_conocimiento h3{
+    font-size:22px;
+}
+
+.icono_conocimiento .bi{
+    margin-right: 15px;
+    font-size: 35px;
 }
 
 /* MEDIA QUERIES*/
@@ -185,9 +195,9 @@ article h2{
 }
 
 @media(max-width:900px){
-    .area_formacion .titulos{
-        width: 100%;
-        margin-bottom: 15px;
+    .area_formacion .titulos, .area_conocimiento .conocimientos{
+        width: 90%;
+        margin-bottom: 25px;
     }
 }
 
