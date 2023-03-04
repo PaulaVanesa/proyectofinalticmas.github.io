@@ -170,11 +170,18 @@ opacity: 0;
         justify-content: center;
         margin-top:15px;
     }
+    .btn:hover{
+        background-color: #fff;
+        color: rgb(59, 141, 248);
+        border:1px solid rgb(59, 141, 248);
+    }
+
     .btn{
         background-color: rgb(59, 141, 248);
         color:#fff;
         padding:15px;
         cursor: pointer;
+        transition: all 1s;
         
     }
 
