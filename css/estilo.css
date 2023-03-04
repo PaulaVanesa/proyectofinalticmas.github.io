@@ -310,8 +310,10 @@ input[type=submit]{
 
 /* RESPONSIVE RULES */
 @media(min-width:590px){
-    .lblchk_btn{
-        display:none;
+
+    .area_iconos{
+        width:80%;
+    
     }
     .area_perfil{
         display: flex;
