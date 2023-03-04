@@ -104,13 +104,13 @@ opacity: 0;
 
 .area_info{
     display:flex;
-    width:80%;
+    width:90%;
     flex-wrap: wrap;
 }
 
 
 .caja_info{
-    width:80%;
+    width:90%;
     background-color: #fff;
     border-radius: 10px;
     padding:10px 15px;
