@@ -1,14 +1,21 @@
 *{margin:0px;padding:0px;box-sizing: border-box;font-family:'Ubuntu', sans-serif;}
 
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url(../img/fondo.png) no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 main{
     display: flex;
     flex-direction: column;
     margin:auto;
     align-items: center;
-    background: url(../img/fondo.png) no-repeat;
-    background-position:center;
-    background-attachment: fixed;
-    background-size: cover;
+    
 }
 #chk_btn{
     display: none;
@@ -304,6 +311,13 @@ input::placeholder, textarea::placeholder{
 input[type=submit]{
     border: none;
     outline: none;
+}
+
+footer{
+    text-align: center;
+    font-size: 13px;
+    color:#646464;
+    padding:10px 0px;
 }
 
 /***********/
