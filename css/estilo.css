@@ -67,7 +67,7 @@ main{
 .area_iconos{
     display: flex;
     justify-content: space-between;
-    width:80%;
+    width:90%;
     margin:10px 0px;
 
 }
@@ -84,7 +84,7 @@ main{
 }
 
 .icono a i{
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(59, 141, 248);
 }
 
