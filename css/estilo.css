@@ -1,225 +1,322 @@
-*{
-    padding:0;
-    margin:0;
+*{margin:0px;padding:0px;box-sizing: border-box;font-family:'Ubuntu', sans-serif;}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    align-items: center;
+    background: url(../img/fondo.png) no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#chk_btn{
+    display: none;
+}
+/* CHECKER */
+.lblchk_btn{
+    display: inline-block;
+    width:45px;
+    height: 20px;
+    background-color: #a1a1a1;
+    border-radius: 100px;
+    margin:10px 0;
+    position:relative;
+    transition: all 0.5s;
 }
 
-/*
-section{
-
-}
-*/
-.area_perfil{
-    height:100vh;
-}
-/* MENU */
-
-.logo{
-    width:100px;
+.lblchk_btn::after{
+    content: '';
+    width:22px;
+    height: 22px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 100px;
+    top:-1px;
+    left:0;
+    transition: all 0.5s;
 }
 
-#menu{
-    text-align: center;
+#chk_btn:checked ~ .lblchk_btn::after{
+    left:23px;
 }
-.nav-link{
-    font-weight: bolder;
+#chk_btn:checked ~ .lblchk_btn{
+    background-color: rgb(59, 141, 248);
 }
-.nav-link{
-    color:rgb(44, 44, 44);
-}
-
-.navbar-nav .nav-link.active{
-    color:rgb(48, 199, 63);
-}
+/************/
 
 /* AREA PERFIL */
-.foto_perfil{
-    border-radius: 300px;
-    width:300px;
-    height:300px;
-    overflow: hidden;
-}
-
-.nombre_perfil{
-    text-align: center;
-}
-
-.foto_perfil img{
-    position:relative;
-    left:-25%;
-    width:150%;
-}
 .area_perfil{
-
-    text-align: center;
-    color:#fff;
-    background: url(../img/pexels-free-nature-stock-1564278.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-#typed{
-    font-size: 25px;
-    font-weight: bolder;
-}
-
-/* SECCIÓN SOBRE MI */
-    /* Caja íconos de redes */
-    #sobremi{
-        padding: 25px;
-        
-    }
-
-    .caja_Redes{
-        width:40%;
-        line-height: 5;
-        margin:auto;
-    }
-    .caja_sobremi{
-        width:60%;
-        margin:auto;
-    }
-    .caja_foto img{
-        width: 100%;
-        clip-path: polygon(0 0, 100% 0%, 100% 74%, 50% 100%, 0 74%);
-    }
-
-    .caja_iconos{
-        margin: auto;
-        width:50%;
-        
-    }
-
-    /* SOBRE MI */
-    .caja_sobremi{
-        padding: 20px;
-    }
-    .bi{
-        color:rgb(48, 199, 63);
-        font-size: 18px;
-    }
-
-    .caja_iconos_cv{
-        margin:auto;
-        line-height: 4rem;
-    }
-
-    .iconoTexto{
-        color:#000;
-    }
-
-    a.boton{
-        text-decoration: none;
-        color:#fff;
-        background-color:rgb(48, 199, 63);
-        width:25%;
-        text-align: center;
-        font-weight: bolder;
-        padding: 5px;
+    width:80%;
+   
     
-    }
+}
+.area_perfil img{
+    width:100%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.3);
+}
+.area_perfil h1{
+    text-align: center;
+}
 
-    /* Secciones del CV*/
-    /* EDUCACIÓN */
-    .area_educacion{
-        background: #EBF5FB ;
-        padding:10px;
-    }
-    .area_educacion h2, .area_habilidades h2, .area_experiencia h2{
-        padding:25px 0px;
-    }
+/************/
 
-    article h2, .area_portafolio h2, #contacto h2{
-        text-align: center;
-    }
+/* AREA ICONOS */
 
-    .area_formacion .titulos, .area_conocimiento .conocimientos, .area_experiencias .titulos{
-        width: 40%;
-        margin-bottom: 15px;
+.area_iconos{
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    margin:10px 0px;
 
-    }
-    .titulos h3{
-        font-size: 17px;
-    }
+}
 
-    .titulos span{
-        font-size: 14px;
-    }
-    .titulos .txt_formacion, .info_conocimiento .txt_conocimiento, .titulos .txt_experiencia{
+.icono{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding:10px 5px;
+    box-shadow:0px 0px 10px rgb(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.icono a i{
+    font-size: 30px;
+    color: rgb(59, 141, 248);
+}
+
+.hidden {
+    display: none;
+  }
+  
+.visuallyhidden {
+opacity: 0;
+}
+
+/************/
+
+
+/* AREA INFO */
+
+
+.area_info{
+    display:flex;
+    width:80%;
+    flex-wrap: wrap;
+}
+
+
+.caja_info{
+    width:80%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding:10px 15px;
+    box-shadow:0px 0px 10px rgb(0,0,0,0.3);
+    margin:15px auto;
+    transition: all 1s;
+}
+
+/* #caja1, #caja2, #caja3, #caja4{
+    position: absolute;
+    transition: all 1s;
+    opacity: 0;
+}  */
+
+.ocultarDisplay{
+    display: none;
+}
+
+.ocultarOpacidad{
+    opacity:0;
+}
+
+
+    /* ABOUT */
+    .txt_info{
         text-align: justify;
     }
-    .titulos .separador{
-        width:35px;
-        height:5px;
-        background-color:rgb(48, 199, 63);
+
+    .icon_info{
+        margin:10px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icon_grupo{
+        margin: 10px 0px;
+    }
+
+    .icon_grupo i{
+        margin-right: 5px;
+        color: rgb(59, 141, 248);
+    }
+
+    .icon_redes{
+        width:50%;
+        margin:15px auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .icon_redes i{
+        font-size: 25px;
+        color: rgb(59, 141, 248);
+    }
+    .caja_btn{
+        display: flex;
+        justify-content: center;
+        margin-top:15px;
+    }
+    .btn{
+        background-color: rgb(59, 141, 248);
+        color:#fff;
+        padding:15px;
+        cursor: pointer;
+        
+    }
+
+    /************/
+
+    /* RESUMEN */
+    .grupo_resumen{
+        display: flex;
+    }
+    .grupo_resumen i{
+        font-size: 25px;
+        color: rgb(59, 141, 248);
+        margin-right: 5px;
+        margin-top: 10px;
+    }
+
+    .grupo_resumen h2{
+        margin-top: 10px;
+    }
+    .grupo_resumen{
+        margin-bottom: 15px;
+    }
+
+    .txt_resumen h3{
+        margin-top: 25px;
+    }
+    .txt_resumen span{
+        font-size: 14px;
+    }
+
+    .txt_resumen p{
+        text-align: justify;
+    }
+
+    .separador{
+        width:40px;
+        height:7px;
+        background-color: rgb(59, 141, 248);
         border-radius: 100px;
-        margin:10px 0;
+        margin:10px 0px;
     }
 
-    /* CONOCIMIENTOS */
-    .area_habilidades{
-        background-color: #d6eaf8;
-    }
-    .info_conocimiento h3{
-        font-size:22px;
+    .separador_grande{
+        margin: 20px 0px;
     }
 
-    .icono_conocimiento .bi{
-        margin-right: 15px;
+    .grupo_resumen .icon_conocimiento{
         font-size: 35px;
+        margin-right: 10px;
     }
 
-    /* EXPERIENCIA */
-    .area_experiencia{
-        background-color: #aed6f1;
+    .grupo_conocimiento h3{
+        margin-bottom: 3px;
     }
 
-/* GALERIA */
-.area_portafolio{
-    background-color: #85C1E9;
+    .grupo_conocimiento p{
+        text-align: justify;
+    }
+
+    /************/
+
+/* PORTFOLIO */
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
 }
 
-.area_galeria .caja_fotos{
-    width:calc(33% - 10px);
-    margin-bottom: 10px;
+.caja_info > h2{
+    margin:15px 0px;
 }
+
+.caja_fotos{
+    position: relative;
+}
+
 .caja_fotos img{
-    width:100%;
+    width: 100%;
 }
 
-/* MEDIA QUERIES*/
-
-@media(max-width:576px){
-    .foto_perfil{
-        border-radius: 200px;
-        width:200px;
-        height:200px;
-    }
-    #typed{
-        font-size: 20px;
-        font-weight: bolder;
-    }
-
-    .caja_Redes, .caja_sobremi{
-        width:100%;
-    }
-
-    a.boton{
-        width:100%;
-    }
-    .area_formacion, .area_experiencias .titulos{
-        width: 100%;  
-    }
-
+.caja_fotos span{
+    position: absolute;
+    bottom: 2px;
+    background-color: rgba(59, 141, 248,0.7);
+    color:#fff;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-weight:bolder;
+    font-size: 20px;
 }
 
-@media(max-width:900px){
-    .area_formacion .titulos, .area_conocimiento .conocimientos{
-        width: 90%;
-        margin-bottom: 25px;
-    }
-    .area_galeria .caja_fotos{
-        width: 90%;
-       margin:auto;
-    }
+/************/
+
+/* FORMULARIO */
+
+.grupo_form{
+    display: flex;
+    margin:10px 0;
 }
 
 
+.grupo_form input, .grupo_form textarea{
+    padding: 5px 10px;
+    flex:1;
+    border-radius: 15px;
+    border: 1px solid #a1a1a1;
+}
+input::placeholder, textarea::placeholder{
+    font-size: 15px;
+    color: #a1a1a1;
+}
+
+.grupo_form i{
+    font-size: 20px;
+    color: rgb(59, 141, 248);
+
+}
+
+input[type=submit]{
+    border: none;
+    outline: none;
+}
+
+/***********/
+
+/* RESPONSIVE RULES */
+@media(min-width:590px){
+    .lblchk_btn{
+        display:none;
+    }
+    .area_perfil{
+        display: flex;
+        margin:15px;
+        justify-content: center;
+    }
+
+    .area_perfil img{
+        width: 35%;
+    }
+    .area_perfil h1{
+        align-self: center;
+        margin-left: 10px;
+    }
+}
