@@ -330,9 +330,12 @@ footer{
 @media(min-width:590px){
 
     .area_iconos{
-        width:80%;
-    
+        width:55%;
     }
+    .area_info{
+        width:61%;
+    }
+
     .area_perfil{
         display: flex;
         margin:15px;
